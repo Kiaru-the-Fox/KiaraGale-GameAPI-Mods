@@ -1,3 +1,6 @@
 [submodule "Input Viewer/GameAPI"]
 	path = Input Viewer/GameAPI
 	url = https://github.com/Rubberduckycooly/GameAPI/
+[submodule "Power-up Display/GameAPI"]
+	path = Power-up Display/GameAPI
+	url = https://github.com/Rubberduckycooly/GameAPI
