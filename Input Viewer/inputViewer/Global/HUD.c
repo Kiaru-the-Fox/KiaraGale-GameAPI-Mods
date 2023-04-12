@@ -86,29 +86,30 @@ void HUD_HandleInputViewer(void)
     RSDK_THIS(HUD);
     EntityPlayer* leader = RSDK_GET_ENTITY(SLOT_PLAYER1, Player);
     RSDKControllerState* controller = &ControllerInfo[leader->controllerID];
+    RSDKAnalogState* joystick = &AnalogStickInfoL[leader->controllerID];
 
-    if (controller->keyUp.press || controller->keyUp.down) {
+    if (controller->keyUp.press || controller->keyUp.down || joystick->keyUp.press || joystick->keyUp.down) {
         ModHUD->inputUpAnimator.frameID = 1;
     }
     else {
         ModHUD->inputUpAnimator.frameID = 0;
     }
 
-    if (controller->keyDown.press || controller->keyDown.down) {
+    if (controller->keyDown.press || controller->keyDown.down || joystick->keyDown.press || joystick->keyDown.down) {
         ModHUD->inputDownAnimator.frameID = 2;
     }
     else {
         ModHUD->inputDownAnimator.frameID = 0;
     }
 
-    if (controller->keyLeft.press || controller->keyLeft.down) {
+    if (controller->keyLeft.press || controller->keyLeft.down || joystick->keyLeft.press || joystick->keyLeft.down) {
         ModHUD->inputLeftAnimator.frameID = 3;
     }
     else {
         ModHUD->inputLeftAnimator.frameID = 0;
     }
 
-    if (controller->keyRight.press || controller->keyRight.down) {
+    if (controller->keyRight.press || controller->keyRight.down || joystick->keyRight.press || joystick->keyRight.down) {
         ModHUD->inputRightAnimator.frameID = 4;
     }
     else {
