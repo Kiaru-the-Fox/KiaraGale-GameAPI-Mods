@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\super\Documents\GitHub\KiaraGale-GameAPI-Mods\Flight Re-curl\v5build\CMakeFiles\5ff20185325dbfd04e00c2604892bb51\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{18EAFDA9-C52C-3747-B570-4948E149F1EC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
